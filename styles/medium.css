@@ -1,0 +1,22 @@
+@media only screen and (min-width: 32.5em) {
+
+    img {
+        height: 175px;
+        float: left;
+        margin-inline-start: auto;
+        border-radius: 20px;
+        box-shadow: 7px 7px 7px black;
+    }   
+
+    body {
+        font-size: 18px;
+
+    }
+
+    header, footer {
+
+        padding: 1.5rem;
+        border-radius: 20px;
+        box-shadow: 7px 7px 7px black;
+    }
+}

@@ -1,0 +1,58 @@
+h1, h2 {
+    font-family: 'Handlee', cursive;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    max-width: 95vw;
+    content: center;
+}
+
+
+header, footer {
+    background-color: #1D3461 ;
+    color: white;
+    text-align: center;
+
+}
+
+header {
+    font-size: 18px;
+}
+.heading-box {
+    border-radius: 20px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5em;
+    margin: 5px;
+    max-width: 95vw;
+}
+
+.example {
+    border: 2px solid black;  
+    margin: 1rem;
+}
+h3 {
+    background-color: #1D3455;
+    color: white;
+    padding: 0 1rem;
+    margin-bottom: -1.26rem;
+    margin-top: -.1rem;
+}
+
+h4 {
+    background-color: lightblue;
+    padding: 0 1rem; 
+    margin-bottom: -.2rem;
+}
+img {
+    width: 100%; 
+}
+
+p {
+    padding: .2rem;
+}
