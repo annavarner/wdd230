@@ -7,7 +7,6 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     max-width: 95vw;
-    content: center;
 }
 
 
@@ -15,7 +14,8 @@ header, footer {
     background-color: #1D3461 ;
     color: white;
     text-align: center;
-
+    border-radius: 20px;
+    margin: 2em;
 }
 
 header {
@@ -35,13 +35,15 @@ header {
 .example {
     border: 2px solid black;  
     margin: 1rem;
+    border-radius: 20px;
+
 }
 h3 {
     background-color: #1D3455;
     color: white;
     padding: 0 1rem;
-    margin-bottom: -1.26rem;
-    margin-top: -.1rem;
+    margin-bottom: -1.3rem;
+    margin-top: .5em;
 }
 
 h4 {
