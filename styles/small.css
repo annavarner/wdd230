@@ -10,7 +10,7 @@ body {
 }
 
 header, nav, main, footer {
-    margin:1.25rem auto;
+    margin: 1.25rem auto;
     max-width: 740px;
 }
 header, footer {
