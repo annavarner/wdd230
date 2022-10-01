@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+}
+body {
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    background-color: #F7F5F5;
+    max-width: 80%;
+    align-items: center;
+    margin: 0 20%
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: center;
+
+
+}
+
+nav a {
+    display: block;
+	text-align: center;
+    border: 1px solid;
+	padding: 10px;
+	font-size: 1.2rem;
+    font-weight: bold;
+}
+footer {
+    background-color: #1D3461 ;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    margin: 2rem 0;
+}
+img {
+    width: 200px;
+}
+
+.colors, tr, td {
+    padding: 1rem;
+    border: 2px solid;
+    font-weight: bold;
+}
+.primary {
+    background-color:#F9F0DC;
+}
+
+.primary-text {
+
+    color: #020100;
+}
+.accent1 {
+    background-color: #F5841B;
+}
+.accent2 {
+    background-color: #AEAFC1;
+}
+
+.heading-example {
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+}
+
+.nanum-gothic {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.colored {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #F5841B;
+}
