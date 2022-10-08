@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Varner WDD-230 Chamber of Commerce Site</title>
+    <meta name="description" content="Chamber of Commerce website for Anna Varner in WDD 230: Web Frontend Development at BYU-I">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+  </head>
+
+
+  
+  
+<body>
+
+    <header>
+      <section class="header">  
+        <img class="logo" src="./images/gotigers-small.png" alt="an animated tiger running with a football wearing a football helmet and jersey">
+
+        <h1>Massillon </h1>
+        <div id="sub-heading">Chamber of Commerce</div>
+        <div id="social1"><a href="https://www.facebook.com"><img src="./images/facebook-logo.png" alt="facebook logo"></a></div> 
+        <div id="social2"><a href="https://www.linkedin.com"><img src="./images/linkedin-logo.png" alt="linked in logo"></a></div>
+
+        <nav>
+          <button id="hamburger" class>
+            <span>☰</span>
+          </button>
+          <ul id="navigation">
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="date"></div>
+      </section>
+      <br>
+
+
+    </header>
+
+    <main>
+      <div class = "main-grid">
+
+        <div class="hero-box">Hero with site name and call to action</div>
+        <div class="event-box">Event</div>
+        <div class="weather-box">Weather</div>
+        <div class="news-box">News Release</div>
+        <div class="join-box">Join</div>
+        <div class="spotlight-box"> 
+          <p class="spot1">Spotlight 1</p>
+          <p class="spot2">Spotlight 2</p>
+          <p class="spot3">Spotlight 3</p>
+
+      </div>
+      </div>
+    </main>
+
+    <footer>
+      <img class="logo" src="./images/gotigers-small.png" alt="an animated tiger running with a football wearing a football helmet and jersey">
+
+      <p><em><strong>City of Massillon Chamber of Commerce</strong></em></p>
+      <p>50 North Ave NE</p>
+      <p>Massillon, Ohio 44646</p>
+      <br>
+      <p>info@massilloncommerce.com</p>
+      <br>
+      <p>330-833-3146</p>
+      <p><a href="https://www.google.com/maps/place/Massillon,+OH/@40.7742627,-81.5968158,13z/data=!3m1!4b1!4m5!3m4!1s0x8837278b6baf82b1:0x494c254786b9fca6!8m2!3d40.7967244!4d-81.5215093">
+      <img src="./images/pin.ico" alt="a location pin icon">Location Map</a></p>
+
+      <hr>
+      <ul>
+        <li>&copy; <span class="currentyear"></span> Massillon Chamber </li>
+        <li> <strong>Anna Varner</strong> </li>
+        <li>WDD 230 Project</li>
+        <li>Last Modification: <span id="lastupdated"></span> </li>
+      </ul>
+    </footer>
+    <script src="./scripts/today.js"></script>
+    <script src="./scripts/togglemenu.js"></script>
+    <script src="./scripts/lastmodified.js"></script>
+</body>
+</html>

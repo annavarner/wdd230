@@ -1,0 +1,144 @@
+
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+.header img {
+    max-width: 60px;
+    margin: 0;
+    padding: 0;
+    grid-column: 1;
+    grid-row: 1/2;
+}
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    padding: 0;
+}
+#sub-heading {
+    grid-column: 2/4;
+    grid-row: 2;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+body {
+    background-color: #f8f6ed;
+}
+#social1 img, #social2 img {
+    width: 25px;
+
+}
+#social1 {
+    grid-column: 4;
+    grid-row: 1;
+    margin-top: 10px;
+}
+#social2 {
+    grid-column: 5;
+    grid-row: 1;
+    margin-top: 10px;
+}
+
+.date {
+    border: 1px solid black;
+    text-align: center;
+    grid-column: 1/7;
+    grid-row: 3;
+    background-color: orange;
+    padding: .5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+.header nav {
+    grid-column: 6;
+    grid-row: 1;
+
+}
+#hamburger {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav button {
+
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+
+}
+nav ul li {
+    border: 1px gray;
+}
+nav ul li a {
+    display: flex;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+a:hover {
+    background-color: orange;
+}
+
+nav ul {display:none;}
+nav ul.open {display:block;}
+
+
+
+.current-date {
+    padding: 1rem;
+}
+
+.hero-box, .event-box, .weather-box, .news-box {
+    padding: 3rem;
+    border: 1px solid #CCC;
+    margin: .5rem;
+}
+.spotlight-box {
+    padding: 1rem;
+    border: 1px solid #CCC;
+    margin: .5rem;
+
+}
+.spot1, .spot2 {
+    margin: 0;
+    padding: 2rem;
+    border: 1px solid #CCC;
+}
+.join-box, .spot3 {
+    display: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.logo {
+    width: 175px;
+    align-self: center;
+    margin: 20px;
+}
+footer hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+
+}
