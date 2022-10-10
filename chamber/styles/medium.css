@@ -1,28 +1,27 @@
+/* css for medium size screen/tablet */
 @media only screen and (min-width: 760px) {
+
+    .header {
+        text-align: start;
+    }
+    .header img {
+        max-width: 100px;
+    }
+
     h1{
+        font-size: 3rem;
+        grid-column: 2/3;
+        grid-row: 1;
+
+    }
+    #sub-heading {
         font-size: 2rem;
-    }
+        grid-column: 2/4;
+        grid-row: 2;
 
-
-    nav button {
-        display: none;
     }
-
-    #navigation {
-        display: flex;
-        margin-left: 2vw;
-        border-left: 1px solid rgba(0,0,0,0.3);
-    
-    }
-    nav ul li a {
-        flex-basis: auto;
-        border: none;
-        border:right 1px solid rgba (0,0,0,0.3);
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 1 1 auto;
+    #social1 img, #social2 img {
+        width: 40px;
     }
 
     .navigation a {
@@ -34,6 +33,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .date {
+        font-size: 1.5rem;
+        width: 100%;
+    }
     .hero-box {
         grid-row: 1;
         grid-column: 1/4;
@@ -45,13 +48,19 @@
     .spotlight-box {
         grid-row: 3;
         grid-column: 1/4;
+        display: flex;
+
+    }
+    .spot1, .spot2 {
+        width: 45%;
+        padding: 2.75rem;
     }
     .join-box {
         display:block;
         grid-row: 4;
         grid-column: 1/4;
         padding: 3rem;
-        border: 1px solid black;
+        border: 1px solid #CCC;
         margin: .5rem;
         }
     
@@ -62,5 +71,39 @@
     .weather-box {
         grid-row: 5;
         grid-column: 3/4;
+    }
+
+    footer {
+        display: block;
+
+    }
+    #footer-box {
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+    .logo {
+        margin: 5px;
+        padding: 0;
+    }
+
+    #address p {
+        text-align: left;
+    }
+    #contact p {
+        margin-left: 30px;
+    }
+    footer ul {
+        display: flex;
+        flex: 1 1 auto;
+        gap: 10px;
+        justify-content: center;
+    }
+    .flexitem + .flexitem {
+        border-left: solid 1px black;
+        padding-left: 10px;
+
     }
 }
