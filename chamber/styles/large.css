@@ -103,7 +103,6 @@
 
     }
     .spot1, .spot2, .spot3 {
-        width: auto;
         display: block;
         padding: 0;
         border: 1px solid #CCC;

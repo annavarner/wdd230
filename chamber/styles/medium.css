@@ -79,8 +79,8 @@
         padding: 0;
 
     }
-    .spot1 img, .spot2 img {
-        width: 95%;
+    .spot1 img, .spot2 img, .spot3 img {
+        max-width: 300px;
 
     }
 
