@@ -1,4 +1,4 @@
-
+/* base css code */
 
 .header {
     display: grid;
@@ -130,7 +130,7 @@ footer p {
 }
 .logo {
     width: 175px;
-    align-self: center;
+    padding: 0 20%;
     margin: 20px;
 }
 footer hr {

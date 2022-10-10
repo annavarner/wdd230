@@ -65,25 +65,30 @@
     </main>
 
     <footer>
-      <img class="logo" src="./images/gotigers-small.png" alt="an animated tiger running with a football wearing a football helmet and jersey">
-
-      <p><em><strong>City of Massillon Chamber of Commerce</strong></em></p>
-      <p>50 North Ave NE</p>
-      <p>Massillon, Ohio 44646</p>
-      <br>
-      <p>info@massilloncommerce.com</p>
-      <br>
-      <p>330-833-3146</p>
-      <p><a href="https://www.google.com/maps/place/Massillon,+OH/@40.7742627,-81.5968158,13z/data=!3m1!4b1!4m5!3m4!1s0x8837278b6baf82b1:0x494c254786b9fca6!8m2!3d40.7967244!4d-81.5215093">
-      <img src="./images/pin.ico" alt="a location pin icon">Location Map</a></p>
-
+      <div id="footer-box">
+        <div>
+          <img class="logo" src="./images/gotigers-small.png" alt="an animated tiger running with a football wearing a football helmet and jersey">
+        </div>
+        <div id="address">
+            <p><em><strong>Massillon Chamber of Commerce</strong></em></p>
+            <p>50 North Ave NE</p>
+            <p>Massillon, Ohio 44646</p>
+          </div>
+          <br>
+          <div id="contact">
+            <p>info@massilloncommerce.com</p>
+            <p>330-833-3146</p>
+            <p><a href="https://www.google.com/maps/place/Massillon,+OH/@40.7742627,-81.5968158,13z/data=!3m1!4b1!4m5!3m4!1s0x8837278b6baf82b1:0x494c254786b9fca6!8m2!3d40.7967244!4d-81.5215093">
+            <img src="./images/pin.ico" alt="a location pin icon">Location Map</a></p>
+          </div>
+        </div>
       <hr>
       <ul>
-        <li>&copy; <span class="currentyear"></span> Massillon Chamber </li>
-        <li> <strong>Anna Varner</strong> </li>
-        <li>WDD 230 Project</li>
-        <li>Last Modification: <span id="lastupdated"></span> </li>
+        <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
+        <li class="flexitem"> <strong> Anna Varner </strong> </li>
+        <li class="flexitem"> WDD 230 Project </li>
       </ul>
+      <p>Last Modification: <span id="lastupdated"></span> </p>
     </footer>
     <script src="./scripts/today.js"></script>
     <script src="./scripts/togglemenu.js"></script>
