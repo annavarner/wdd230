@@ -1,5 +1,6 @@
 /* base css code */
 
+
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -27,8 +28,27 @@ h1 {
     margin-top: -10px;
     margin-bottom: 10px;
 }
+h2 {
+    color: #F5841B;
+    text-align: center;
+}
+
+h3, div p {
+    text-align: center;
+}
+div hr {
+    display: block;
+    height: 1px;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 1em;
+    padding: 0;
+}
+
 body {
     background-color: #f8f6ed;
+
 }
 #social1 img, #social2 img {
     width: 25px;
@@ -72,12 +92,10 @@ ul {
 }
 
 nav button {
-
     background: transparent;
     border: none;
     font-size: 2rem;
     color: #555;
-
 }
 nav ul li {
     border: 1px gray;
@@ -101,22 +119,63 @@ nav ul.open {display:block;}
 }
 
 .hero-box, .event-box, .weather-box, .news-box {
-    padding: 3rem;
+    padding: 0;
     border: 1px solid #CCC;
     margin: .5rem;
+}
+.weather-box {
+    width: 80%;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.hero-box {
+    position: relative;
+}
+main img {
+    width: 95%;
+    margin: 2.5%;
+}
+.hero-box h2 {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.hero-box button {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 4rem;
+    background-color:#F5841B;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0.8;
 }
 .spotlight-box {
     padding: 1rem;
     border: 1px solid #CCC;
     margin: .5rem;
-
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .spot1, .spot2 {
     margin: 0;
-    padding: 2rem;
     border: 1px solid #CCC;
+    max-width: 95%;
 }
-.join-box, .spot3 {
+.spot1 {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.spot2 {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+main .join-box, .spot3 {
     display: none;
 }
 footer {

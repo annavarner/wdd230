@@ -50,17 +50,60 @@
     <main>
       <div class = "main-grid">
 
-        <div class="hero-box">Hero with site name and call to action</div>
-        <div class="event-box">Event</div>
-        <div class="weather-box">Weather</div>
-        <div class="news-box">News Release</div>
-        <div class="join-box">Join</div>
-        <div class="spotlight-box"> 
-          <p class="spot1">Spotlight 1</p>
-          <p class="spot2">Spotlight 2</p>
-          <p class="spot3">Spotlight 3</p>
+        <div class="hero-box">
+          <img src="./images/downtown.jpg" alt="Downtown Massillon at night">
+            <h2>Welcome to Massillon!</h2>
+            <a href="#"><button id="joinBtn">Join the Chamber</button></a>
 
-      </div>
+        </div>
+        <div class="event-box">
+          <h2>Holiday Parade & Light Up</h2>
+          <h3>Duncan Plaza</h3>
+          <p>Join us in downtown Massillon November 19 from 5pm-8pm</p>
+          <p><a href="#">more info</a></p>
+        </div>
+        <div class="weather-box">
+          <a class="weatherwidget-io" href="https://forecast7.com/en/40d80n81d52/massillon/?unit=us" data-label_1="Massillon" 
+          data-label_2="WEATHER" data-font="Arial" data-days="3" data-theme="fall-leaves" >Massillon WEATHER</a>
+          <script src="./scripts/weather.js">
+          </script>
+        </div>
+        <div class="news-box">
+          <h2>News Release</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="spotlight-box"> 
+          <div class="spot1"><h2>Bob's Pizza</h2>
+            <img src="./images/pizza.png" alt="a picture of pizza">
+            <h3>Best Pizza in Town!</h3>
+            <hr>
+            <p>www.bobspizzamassillon.com</p>
+            <p>330-555-2346</p>
+          </div>
+          <div class="spot2"><h2>Massillon Museum</h2>
+            <img src="./images/massmu.jpg" alt="Massillon Museum">
+            <h3>"Where Art & History Come Together"</h3>
+            <hr>
+            <p>www.massillonmuseum.org</p>
+            <p>330-833-4061</p>
+          </div>
+          <div class="spot3"><h2>Lincoln Theatre</h2>
+            <img src="./images/lincoln-theatre.jpg" alt="Lincoln Theatre">
+            <h3>Now showing classic films!</h3>
+            <hr>
+            <p>www.lionslincolntheatre.org</p>
+            <p>330-481-9105</p>
+          </div>
+        </div>  
+        <div class="join-box">
+          <a href="#">
+            <button class="join-box-button">Join Us!</button>
+          </a>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+        </div>
       </div>
     </main>
 
@@ -83,12 +126,14 @@
           </div>
         </div>
       <hr>
-      <ul>
-        <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
-        <li class="flexitem"> <strong> Anna Varner </strong> </li>
-        <li class="flexitem"> WDD 230 Project </li>
-      </ul>
+      <div id="large-footer">
+        <ul>
+          <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
+          <li class="flexitem"> <strong> Anna Varner </strong> </li>
+          <li class="flexitem"> WDD 230 Project </li>
+        </ul>
       <p>Last Modification: <span id="lastupdated"></span> </p>
+      </div>
     </footer>
     <script src="./scripts/today.js"></script>
     <script src="./scripts/togglemenu.js"></script>
