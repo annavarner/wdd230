@@ -104,12 +104,14 @@
     }
     .spot1, .spot2, .spot3 {
         display: block;
-        max-width: 300px;
+        width: 300px;
         padding: 0;
         border: 1px solid #CCC;
         margin: .5rem;
     }
-
+    .spot3 img {
+        max-width: 300px;
+}
     #footer-box {
         margin-top: 25px;
         display: grid;
