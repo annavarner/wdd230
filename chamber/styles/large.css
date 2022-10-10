@@ -104,6 +104,7 @@
     }
     .spot1, .spot2, .spot3 {
         display: block;
+        max-width: 300px;
         padding: 0;
         border: 1px solid #CCC;
         margin: .5rem;
