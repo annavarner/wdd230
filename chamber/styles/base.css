@@ -1,6 +1,14 @@
 /* base css code */
 
-
+.banner {
+    background-color: black;
+    color: #F5841B;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -13,6 +21,7 @@
     grid-column: 1;
     grid-row: 1/2;
 }
+
 h1 {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.5rem;
@@ -48,6 +57,8 @@ div hr {
 
 body {
     background-color: #f8f6ed;
+    max-width: 500px;
+    align-content: center;
 
 }
 #social1 img, #social2 img {
@@ -105,8 +116,9 @@ nav ul li a {
     padding: 0.5rem;
     text-decoration: none;
 }
-a:hover {
+nav a:hover {
     background-color: orange;
+    box-shadow: 10px 5px 5px black;
 }
 
 nav ul {display:none;}

@@ -97,9 +97,10 @@
         padding: 2rem;
     }
     .spotlight-box {
-        display: block;
         grid-column: 3;
         grid-row: 1/4;
+        display: flex;
+        flex-direction: column;
 
     }
     .spot1, .spot2, .spot3 {
@@ -108,6 +109,7 @@
         padding: 0;
         border: 1px solid #CCC;
         margin: .5rem;
+        max-width: 95%;
     }
     .spot3 img {
         max-width: 300px;
