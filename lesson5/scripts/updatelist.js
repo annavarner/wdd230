@@ -28,6 +28,8 @@ button.addEventListener("click", () => {
 
         list.appendChild(listItem);
 
+        input.value = "";
+
 // add an event listener to the delete button that removes the li element when clicked
 // send the focus to the input element
 // clean up the successful add of a chapter by changing the input to nothing or the empty string and setting the focus to the input. */
