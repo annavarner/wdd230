@@ -1,22 +1,33 @@
 /* base css code */
 
+/* header*/
+
+body {
+    background-color: #f8f6ed;
+    max-width: 96vw;
+    margin: 2vw;
+    align-content: center; 
+
+}
+/*banner displays only on Mon & Tues */
 .banner {
     background-color: black;
     color: #F5841B;
     font-size: 1.5rem;
     font-weight: bold;
-    width: 80%;
+    width: 90%;
     margin-left: 10%;
     text-align: center;
 }
+
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
 }
 .header img {
-    max-width: 60px;
-    margin: 0;
+    max-width: 20vw;
+    margin: 1vw;
     padding: 0;
     grid-column: 1;
     grid-row: 1/2;
@@ -34,17 +45,17 @@ h1 {
 #sub-heading {
     grid-column: 2/4;
     grid-row: 2;
-    margin-top: -10px;
+    margin-top: -10vw;
     margin-bottom: 10px;
 }
+
+
 h2 {
     color: #F5841B;
     text-align: center;
 }
 
-h3, div p {
-    text-align: center;
-}
+
 div hr {
     display: block;
     height: 1px;
@@ -55,12 +66,7 @@ div hr {
     padding: 0;
 }
 
-body {
-    background-color: #f8f6ed;
-    max-width: 500px;
-    align-content: center;
 
-}
 #social1 img, #social2 img {
     width: 25px;
 
@@ -130,23 +136,58 @@ nav ul.open {display:block;}
     padding: 1rem;
 }
 
+
+/* main */
+div img {
+    width: 96%;
+    margin: 2%;
+
+}
+main, footer {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h3, div p {
+    text-align: center;
+}
+.main-grid {
+    display: grid;
+
+}
 .hero-box, .event-box, .weather-box, .news-box {
-    padding: 0;
     border: 1px solid #CCC;
-    margin: .5rem;
+    max-width: 96%;
+    margin: 2%;
+}
+.news-box {
+    padding: 2%;
 }
 .weather-box {
     width: 80%;
     align-content: center;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #F5841B;
+}
+.weather-box h2 {
+    color: black;
+}
+.weather-img {
+    width: 25%;
+    float: left;
+    align-items: center;
+    margin: 1rem;
+}
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
 }
 .hero-box {
     position: relative;
+    width: 100%;
 }
-main img {
+.hero-box picture img {
     width: 95%;
-    margin: 2.5%;
+    margin: 2.5vw;
 }
 .hero-box h2 {
     position: absolute;
@@ -167,6 +208,10 @@ main img {
     font-weight: bold;
     opacity: 0.8;
 }
+.spotpic {
+    max-width: 95vw;
+}
+
 .spotlight-box {
     padding: 1rem;
     border: 1px solid #CCC;
@@ -189,6 +234,11 @@ main img {
 }
 main .join-box, .spot3 {
     display: none;
+} 
+
+/* footer */
+#contact img {
+    max-width: 25px;
 }
 footer {
     display: flex;

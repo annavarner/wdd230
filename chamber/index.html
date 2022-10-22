@@ -21,11 +21,11 @@
 <body>
 
     <header>
+      <!-- Banner displays only on Mondays & Tuesdays -->
       <div class="banner"></div>
-      <section class="header">  
-        
-        <img class="logo" src="./images/gotigers-small.png" alt="an animated tiger running with a football wearing a football helmet and jersey">
 
+      <section class="header">  
+        <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
         <h1>Massillon </h1>
         <div id="sub-heading">Chamber of Commerce</div>
         <div id="social1"><a href="https://www.facebook.com"><img src="./images/facebook-logo.png" alt="facebook logo"></a></div> 
@@ -53,8 +53,19 @@
       <div class = "main-grid">
 
         <div class="hero-box">
-          <img src="./images/downtown.JPG" alt="Downtown Massillon at night">
-            <h2>Welcome to Massillon!</h2>
+          <picture>
+            <source media="(max-width: 400px)" srcset="./images/test-img400.jpg">
+            <source media="(max-width: 800px)" srcset="./images/test-img800.jpg">
+            <source media="(max-width: 1600px)" srcset="./images/test-img1200.jpg"> 
+            <img src="./images/test-img1200.jpg" alt="test image">
+
+           <!--  <source media="(max-width: 400px)" srcset="./images/downtown400.jpg">
+            <source media="(max-width: 800px)" srcset="./images/downtown800.jpg">
+            <source media="(max-width: 1200px)" srcset="./images/downtown1200.jpg"> 
+            <img src="./images/downtown-original.jpg" alt="Downtown Massillon at night"> -->
+            
+          </picture>
+            <!--<h2>Welcome to Massillon!</h2>-->
             <a href="#"><button id="joinBtn">Join the Chamber</button></a>
 
         </div>
@@ -65,10 +76,18 @@
           <p><a href="#">more info</a></p>
         </div>
         <div class="weather-box">
-          <a class="weatherwidget-io" href="https://forecast7.com/en/40d80n81d52/massillon/?unit=us" data-label_1="Massillon" 
+          <h2>Weather</h2>
+          <img class="weather-img" src="./images/partly-cloudy.png" alt="sun behind clouds">
+          <p id="temperature"><span id="degrees">32</span>° F</p>
+          <p>Partly Cloudy</p>
+          <hr>
+          <p>Wind Speed: <span id="wind-speed">2.5km</span></p>
+          <p>Wind Chill: <span id="wind-chill"></span></p>
+          
+          <!--<a class="weatherwidget-io" href="https://forecast7.com/en/40d80n81d52/massillon/?unit=us" data-label_1="Massillon" 
           data-label_2="WEATHER" data-font="Arial" data-days="3" data-theme="fall-leaves" >Massillon WEATHER</a>
           <script src="./scripts/weather.js">
-          </script>
+          </script> -->
         </div>
         <div class="news-box">
           <h2>News Release</h2>
@@ -79,21 +98,21 @@
         </div>
         <div class="spotlight-box"> 
           <div class="spot1"><h2>Bob's Pizza</h2>
-            <img src="./images/pizza.png" alt="a picture of pizza">
+            <img class="spotpic" src="./images/pizza.png" alt="a picture of pizza">
             <h3>Best Pizza in Town!</h3>
             <hr>
             <p>www.bobspizzamassillon.com</p>
             <p>330-555-2346</p>
           </div>
           <div class="spot2"><h2>Massillon Museum</h2>
-            <img src="./images/massmu.jpg" alt="Massillon Museum">
+            <img class="spotpic" src="./images/massmu.jpg" alt="Massillon Museum">
             <h3>"Where Art & History Come Together"</h3>
             <hr>
             <p>www.massillonmuseum.org</p>
             <p>330-833-4061</p>
           </div>
           <div class="spot3"><h2>Lincoln Theatre</h2>
-            <img src="./images/lincoln-theatre.jpg" alt="Lincoln Theatre">
+            <img class="spotpic" src="./images/lincoln-theatre.jpg" alt="Lincoln Theatre">
             <h3>Now showing classic films!</h3>
             <hr>
             <p>www.lionslincolntheatre.org</p>
@@ -112,7 +131,7 @@
     <footer>
       <div id="footer-box">
         <div>
-          <img class="logo" src="./images/gotigers-small.png" alt="an animated tiger running with a football wearing a football helmet and jersey">
+          <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
         </div>
         <div id="address">
             <p><em><strong>Massillon Chamber of Commerce</strong></em></p>
@@ -141,5 +160,6 @@
     <script src="./scripts/togglemenu.js"></script>
     <script src="./scripts/lastmodified.js"></script>
     <script src="./scripts/banner.js"></script>
+    <script src="./scripts/windchill.js"></script>
 </body>
 </html>
