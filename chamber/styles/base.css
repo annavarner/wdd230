@@ -66,9 +66,8 @@ div hr {
     padding: 0;
 }
 
-
 #social1 img, #social2 img {
-    width: 25px;
+    height: 25px;
 
 }
 #social1 {
@@ -126,6 +125,12 @@ nav a:hover {
     background-color: orange;
     box-shadow: 10px 5px 5px black;
 }
+
+
+.active {
+    font-weight: bold;
+}
+
 
 nav ul {display:none;}
 nav ul.open {display:block;}
@@ -262,4 +267,22 @@ footer hr {
     margin: 1em 0;
     padding: 0;
 
+}
+
+
+/*discover page*/
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+
+}
+picture {
+    border: 2px solid #CCC;
+    margin: 3px;
+}
+picture p {
+    font-size: 1rem;
+    font-style: italic;
 }

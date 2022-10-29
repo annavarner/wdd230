@@ -114,6 +114,8 @@
         align-self: center;
     }
 
+
+    /*foooter */
     footer {
         display: block;
 
@@ -142,9 +144,18 @@
         gap: 20px;
         justify-content: center;
     }
+
     .flexitem + .flexitem {
         border-left: solid 1px black;
         padding-left: 20px;
+    }
 
+/*discover page*/
+
+    .flex-box p {
+        font-size: 1.5rem;
+    }
+    .flex-box img:hover {
+        opacity: .5;
     }
 }

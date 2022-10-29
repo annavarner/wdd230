@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Varner WDD-230 Chamber of Commerce Site - Discover Page</title>
+    <meta name="description" content="Chamber of Commerce website for Anna Varner in WDD 230: Web Frontend Development at BYU-I">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+  </head>
+
+
+  
+  
+<body>
+
+    <header>
+      <!-- Banner displays only on Mondays & Tuesdays -->
+      <div class="banner"></div>
+
+      <section class="header">  
+        <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
+        <h1>Massillon </h1>
+        <div id="sub-heading">Chamber of Commerce</div>
+        <div id="social1"><a href="https://www.facebook.com"><img src="./images/facebook-logo.png" alt="facebook logo"></a></div> 
+        <div id="social2"><a href="https://www.linkedin.com"><img src="./images/linkedin-logo.png" alt="linked in logo"></a></div>
+
+        <nav>
+          <button id="hamburger" class>
+            <span>☰</span>
+          </button>
+          <ul id="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html" class="active">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="date"></div>
+      </section>
+      <br>
+
+
+    </header>
+
+    <main>
+        <h2>Discover Massillon!</h2>
+        <div class="demographics">
+            <h3>Quick Facts:</h3>
+            <ul>
+                <li>Founded: 1868</li>
+                <li>Population: 32,000</li>
+                <li>Nickname: Tiger Town</li>
+                <li>Motto: City of Champions</li>
+                <li>Land in square miles: 18.97</li>
+                <li>Elevation: 948 ft</li>
+
+            </ul>
+
+        </div>
+        <div class="flex-box">
+          <!-- <picture>
+              <img src="./images/placeholder.JPG"
+              data-src="./images/kalahari.jpg"
+              alt="my family at Kalahari">
+            </picture> -->
+  
+            <picture>  
+            <source media="(max-width: 400px)" srcset="./images/rec-center200.jpg">
+            <source media="(max-width: 800px)" srcset="./images/rec-center400.jpg">
+            <source media="(max-width: 1200px)" srcset="./images/rec-center800.jpg"> 
+            <img src="./images/placeholder.png" data-src="./images/rec-center800.jpg" alt="Massillon Rec Center Pool">
+            <p>Go swimming at the Massillon Rec Center</p> 
+          </picture>
+          <picture>
+            <source media="(max-width: 400px)" srcset="./images/sippo200.jpg">
+            <source media="(max-width: 800px)" srcset="./images/sippo400.jpg">
+            <source media="(max-width: 1200px)" srcset="./images/sippo800.jpg"> 
+            <img src="./images/placeholder.png" data-src="./images/sippo800.jpg" alt="Sippo Lake">
+            <p>Visit Sippo Lake Park for fishing, canoeing, hiking, and more</p> 
+          </picture>
+          <picture>
+            <source media="(max-width: 400px)" srcset="./images/spring-hill200.jpg">
+            <source media="(max-width: 800px)" srcset="./images/spring-hill400.jpg">
+            <source media="(max-width: 1200px)" srcset="./images/spring-hill800.jpg"> 
+            <img src="./images/placeholder.png" data-src="./images/spring-hill800.jpg" alt="Spring Hill Historic Home">
+            <p>Take a tour of Spring Hill Historic Home - an Underground Railroad Site</p> 
+          </picture>
+          <picture>
+            <source media="(max-width: 400px)" srcset="./images/library200.jpg">
+            <source media="(max-width: 800px)" srcset="./images/library400.jpg">
+            <source media="(max-width: 1200px)" srcset="./images/library800.jpg"> 
+            <img src="./images/placeholder.png" data-src="./images/library800.jpg" alt="Massillon Public Library">
+            <p>Check out what's new at Massillon Public Library</p> 
+          </picture>
+          <picture>
+            <source media="(max-width: 400px)" srcset="./images/towpath200.jpg">
+            <source media="(max-width: 800px)" srcset="./images/towpath400.jpg">
+            <source media="(max-width: 1200px)" srcset="./images/towpath800.jpg"> 
+            <img src="./images/placeholder.png" data-src="./images/towpath800.jpg" alt="Towpath">
+            <p>Hike or Bike along the Ohio and Erie Canal Towpath</p> 
+          </picture>
+        </div>
+    </main>
+
+    <footer>
+      <div id="footer-box">
+        <div>
+          <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
+        </div>
+        <div id="address">
+            <p><em><strong>Massillon Chamber of Commerce</strong></em></p>
+            <p>50 North Ave NE</p>
+            <p>Massillon, Ohio 44646</p>
+          </div>
+          <br>
+          <div id="contact">
+            <p>info@massilloncommerce.com</p>
+            <p>330-833-3146</p>
+            <p><a href="https://www.google.com/maps/place/Massillon,+OH/@40.7742627,-81.5968158,13z/data=!3m1!4b1!4m5!3m4!1s0x8837278b6baf82b1:0x494c254786b9fca6!8m2!3d40.7967244!4d-81.5215093">
+            <img src="./images/pin.ico" alt="a location pin icon">Location Map</a></p>
+          </div>
+        </div>
+      <hr>
+      <div id="large-footer">
+        <ul>
+          <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
+          <li class="flexitem"> <strong> Anna Varner </strong> </li>
+          <li class="flexitem"> WDD 230 Project </li>
+        </ul>
+      <p class="mod">Last Modification: <span id="lastupdated"></span></p>
+      <p class="mod">Days Since Last Visit: <span id="visit"></span></p>
+      </div>
+    </footer>
+    <script src="./scripts/today.js"></script>
+    <script src="./scripts/togglemenu.js"></script>
+    <script src="./scripts/lastmodified.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/lazy.js"></script>
+</body>
+</html>
