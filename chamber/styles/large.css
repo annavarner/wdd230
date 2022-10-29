@@ -152,8 +152,8 @@
 /*discover page*/
 
 .flex-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 25vw;
+    float: left;
 
 }
 picture img {
