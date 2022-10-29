@@ -149,18 +149,17 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-/*discover page*/
+    /*discover page*/
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
 
-.flex-box {
-    max-width: 25vw;
-    float: left;
-
-}
-picture img {
-    max-width: 100vw;
-}
-picture p {
-    font-size: 2rem;
-    font-style: italic;
-}
+    figure img {
+        max-width: 100vw;
+    }
+    figcaption {
+        font-size: 2rem;
+        font-style: italic;
+    }
 }

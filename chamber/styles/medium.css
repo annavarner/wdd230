@@ -12,7 +12,6 @@
         font-size: 3rem;
         grid-column: 2/3;
         grid-row: 1;
-
     }
  
     #sub-heading {
@@ -151,9 +150,23 @@
     }
 
 /*discover page*/
-
-    .flex-box p {
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 33% 66%;
+    }
+    .flex-box {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .demographics {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .demographics li{
         font-size: 1.5rem;
+    }
+    figcaption {
+        font-size: 1.25rem;
     }
     .flex-box img:hover {
         opacity: .5;
