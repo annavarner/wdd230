@@ -101,7 +101,7 @@ div hr {
     text-decoration: none;
 }
 
-ul {
+nav ul, footer ul {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -287,4 +287,68 @@ figure {
 figcaption {
     font-size: 1rem;
     font-style: italic;
+}
+
+/*Join Page */
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width: 96%;
+}
+form legend {
+    margin: 0 1rem;
+    text-align: center
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+
+form label.top input,  form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 92%;
+    max-width: 25rem;
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555
+}
+label.sbs input {
+    margin: 5px;
+}
+form input.submitBtn {
+    border: none;
+    background-color: #F5841B;
+    color: black;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: auto;
+    width: 96%;
+    max-width: 25rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+.member-levels p{
+    font-weight: bold;
+    font-style: italic;
+}
+.member-levels ul li{
+    list-style: circle;
+    padding: 3px;
+
 }

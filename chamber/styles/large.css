@@ -162,4 +162,19 @@
         font-size: 1.5rem;
         font-style: italic;
     }
+
+    /*Join Page */
+    .join-grid {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 5px;
+    }
+    .chamber-join, .levels-box {
+        display: block;
+        width: 95%;
+        padding: 1rem;
+    }
+
 }

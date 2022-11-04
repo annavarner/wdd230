@@ -171,4 +171,24 @@
     .flex-box img:hover {
         opacity: .5;
     }
+
+
+/*Join Page*/
+
+    form legend {
+        font-size: 1.2rem;
+    }
+    form label.top, form label.sbs, form div, .member-levels p, .member-levels ul li, form input.submitBtn{
+        font-size: 1.4rem;
+    }
+
+    form label.top input,  form label.top select {
+        max-width: 40rem;
+        font-size: 1.5rem;
+    }
+    form input.submitBtn {
+        max-width: 40rem;
+    }
+
+
 }

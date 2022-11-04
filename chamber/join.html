@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Varner WDD-230 Chamber of Commerce Site</title>
+    <meta name="description" content="Chamber of Commerce website for Anna Varner in WDD 230: Web Frontend Development at BYU-I">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+  </head>
+
+
+  
+  
+<body>
+
+    <header>
+      <!-- Banner displays only on Mondays & Tuesdays -->
+      <div class="banner"></div>
+
+      <section class="header">  
+        <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
+        <h1>Massillon </h1>
+        <div id="sub-heading">Chamber of Commerce</div>
+        <div id="social1"><a href="https://www.facebook.com"><img src="./images/facebook-logo.png" alt="facebook logo"></a></div> 
+        <div id="social2"><a href="https://www.linkedin.com"><img src="./images/linkedin-logo.png" alt="linked in logo"></a></div>
+
+        <nav>
+          <button id="hamburger" class>
+            <span>☰</span>
+          </button>
+          <ul id="navigation">
+            <li><a href="./index.html" >Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="./join.html" class="active">Join</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="date"></div>
+      </section>
+      <br>
+
+
+    </header>
+
+    <main>
+      <div class="join-grid">
+        <div class="chamber-join">
+          <h2>Join the Chamber</h2>
+            <form method="get" action="thankyou.html">
+              <fieldset>
+                <legend>Applicant Information</legend>
+                  <label class="top">First Name*<input type="text" name="fname" required></label>
+                  <label class="top">Last Name*<input type="text" name="lname" required></label>
+                  <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"
+                    required></label>
+                  <label class="top">Cell Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                  <label class="top">Business Name*<input type="text" name="business-name" required></label> 
+                  <label class="top">Business Position Title<input type="text" name="title" pattern="[\w\s\-]{7,}"></label>
+                  <label class="top">Business Description<input type="text" name="description"></label>
+                  <input type="hidden" name="date" class="join-date">
+              </fieldset>
+              <fieldset>
+                <legend>Membership Level</legend>
+                  <label class="sbs"><input type=radio name="level" value="NP Membership">Non-Profit</label> 
+                  <label class="sbs"><input type=radio name="level" value="Bronze">Bronze</label> 
+                  <label class="sbs"><input type=radio name="level" value="Silver">Silver</label>
+                  <label class="sbs"><input type=radio name="level" value="Gold">Gold</label>                       
+              </fieldset>
+              <fieldset>
+                <input type="submit" value ="Join Now" class="submitBtn">
+              </fieldset>
+            </form>
+        </div>  
+          <div class="levels-box">
+            <h2>Membership levels:</h2>
+              <div class="member-levels">
+                <p>Non-Profit - no annual fees</p>
+                  <ul>
+                    <li>Basic Online Directory Listing</li>
+                    <li>Monthly Newsletter</li>
+                    <li>Advertising Opportunities at Member Prices</li>
+                  </ul>
+                  <hr>
+                <p>Bronze - $250 annually</p>
+                  <ul>
+                    <li>Enhanced Online Directory Listing</li>
+                    <li>Chamber Hosted Ribbon Cutting</li>
+                    <li>Anniversary Recognition in Chamber Publications and Social Media</li>
+                    <li>Opportunity to Host and Sponsor Chamber Afterhours Events</li>
+                    <li>Quarterly Newsletter Content Inserts</li>
+                    <li>One Annual Guest Blog Post</li>
+                  </ul>
+                  <hr>
+                <p>Silver - $500 annually</p>
+                  <ul>
+                    <li>Everything in Bronze Level</li>
+                    <li>Additional Category Listing in Online Directory</li>
+                    <li>Quarterly Guest Blog Posts</li>
+                    <li>Early Access to Advertising Opportunities</li>
+                    <li>Monthly Newsletter Content Inserts</li>
+                    <li>Named as Website Sponsor</li>
+                  </ul>
+                  <hr>
+                <p>Gold - $750 annually</p>
+                <ul>
+                  <li>Everything in Bronze & Silver Level</li>
+                  <li>Spotlight on Main Page of Chamber Website</li>
+                  <li>Two Banner Ads on Chamber Website in Location of Your Choice</li>
+                  <li>Invitation to Meet With State Policy Makers</li>
+                  <li>Seat on Chamber Board of Directors</li>
+                  <li>Seat on Chamber Diversity Professionals Council</li>
+                </ul> 
+              </div>             
+          </div>
+      </div>
+  </main>
+
+    <footer>
+      <div id="footer-box">
+        <div>
+          <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
+        </div>
+        <div id="address">
+            <p><em><strong>Massillon Chamber of Commerce</strong></em></p>
+            <p>50 North Ave NE</p>
+            <p>Massillon, Ohio 44646</p>
+          </div>
+          <br>
+          <div id="contact">
+            <p>info@massilloncommerce.com</p>
+            <p>330-833-3146</p>
+            <p><a href="https://www.google.com/maps/place/Massillon,+OH/@40.7742627,-81.5968158,13z/data=!3m1!4b1!4m5!3m4!1s0x8837278b6baf82b1:0x494c254786b9fca6!8m2!3d40.7967244!4d-81.5215093">
+            <img src="./images/pin.ico" alt="a location pin icon">Location Map</a></p>
+          </div>
+        </div>
+      <hr>
+      <div id="large-footer">
+        <ul>
+          <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
+          <li class="flexitem"> <strong> Anna Varner </strong> </li>
+          <li class="flexitem"> WDD 230 Project </li>
+        </ul>
+      <p>Last Modification: <span id="lastupdated"></span> </p>
+      </div>
+    </footer>
+    <script src="./scripts/today.js"></script>
+    <script src="./scripts/togglemenu.js"></script>
+    <script src="./scripts/lastmodified.js"></script>
+    <script src="./scripts/banner.js"></script>
+</body>
+</html>
