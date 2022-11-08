@@ -1,0 +1,1 @@
+no object network obj-10.210.7.212!object network obj-172.18.144.180host 172.18.144.180nat (inside,outside) static 10.92.21.127!
