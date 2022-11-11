@@ -101,27 +101,27 @@ div hr {
     text-decoration: none;
 }
 
-nav ul, footer ul {
+.header nav ul, footer ul {
     list-style: none;
     text-align: center;
     padding: 0;
 }
 
-nav button {
+.header nav button {
     background: transparent;
     border: none;
     font-size: 2rem;
     color: #555;
 }
-nav ul li {
+.header nav ul li {
     border: 1px gray;
 }
-nav ul li a {
+.header nav ul li a {
     display: flex;
     padding: 0.5rem;
     text-decoration: none;
 }
-nav a:hover {
+.header nav a:hover {
     background-color: orange;
     box-shadow: 10px 5px 5px black;
 }
@@ -132,8 +132,8 @@ nav a:hover {
 }
 
 
-nav ul {display:none;}
-nav ul.open {display:block;}
+.header nav ul {display:none;}
+.header nav ul.open {display:block;}
 
 
 
@@ -350,5 +350,59 @@ form label.top input:required:valid {
 .member-levels ul li{
     list-style: circle;
     padding: 3px;
+
+}
+
+/* Directory Page */
+.grid .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.cards section {
+    border: 1px solid black;
+    margin: 5px;
+    background-color: rgb(248, 243, 227);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+.busCard img {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px #777;
+}
+.busCard h2 {
+    font-size: 1.5rem;
+    color: black;
+
+}
+.busCard p {
+    margin: .5rem 0 .5rem 0;
+    
+}
+.viewChanger {
+    margin-left: 42%;
+}
+.viewChanger button {
+    padding-top: .2rem;
+    margin: 1rem;
+}
+
+.list .cards {
+    display: flex;
+    flex-direction: column;
+}
+.list img {
+    display: none;
+}
+.list h2, .list p {
+    text-align: left;
+    margin: .5rem .5rem .2rem .2rem;
+}
+.list .infodiv {
+    display: flex;
+    flex-wrap: wrap;
 
 }

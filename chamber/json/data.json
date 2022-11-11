@@ -1,0 +1,77 @@
+{
+"businesses": [
+    {
+        "name": "Bob's Pizza",
+        "address": "123 Lincoln Way E",
+        "phoneNumber": "330-555-1234",
+        "url": "www.bobspizzamassillon.com",
+        "image": "./images/pizza.png",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Massillon Museum",
+        "address": "121 Lincoln Way E",
+        "phoneNumber": "330-833-4061",
+        "url": "www.massillonmuseum.org",
+        "image": "./images/massmu.jpg",
+        "membershipLevel": "NP"
+    },
+    {
+        "name": "Lincoln Theatre",
+        "address": "156 Lincoln Way E",
+        "phoneNumber": "330-481-9105",
+        "url": "www.lionslincolntheatre.org",
+        "image": "./images/lincoln-theatre.jpg",
+        "membershipLevel": "silver"
+    },
+    {
+        "name": "Macarons & More Bakery",
+        "address": "155 William Ave",
+        "phoneNumber": "234-559-7980",
+        "url": "www.macarons-and-more.com",
+        "image": "./images/macarons.jpg",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "Tyler's Gym",
+        "address": "23 Speedy Street South",
+        "phoneNumber": "234-555-8520",
+        "url": "www.tylersgym.com",
+        "image": "./images/gym.jpg",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "Massillon Library",
+        "address": "208 Lincoln way E",
+        "phoneNumber": "330-832-9831",
+        "url": "www.massillonlibrary.org",
+        "image": "./images/library400.jpg",
+        "membershipLevel": "NP"
+    },
+    {
+        "name": "Pretty Nails",
+        "address": "13 Erie Ave",
+        "phoneNumber": "234-555-8914",
+        "url": "www.prettynails.com",
+        "image": "./images/nails.jpg",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "Lillian's Vintage Music Shop",
+        "address": "12 Musical Way",
+        "phoneNumber": "330-555-4189",
+        "url": "www.lilliansvintagemusic.com",
+        "image": "./images/records.jpg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Speedy Street Classic Cars",
+        "address": "56 Speedy Street South",
+        "phoneNumber": "330-555-5656",
+        "url": "www.speedystreetcars.com",
+        "image": "./images/cars.jpg",
+        "membershipLevel": "Silver"
+    }
+]
+
+}

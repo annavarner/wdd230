@@ -36,7 +36,7 @@
         grid-column: 8;
     }
 
-    nav button {
+    .header nav button {
         display: none;
     }
 
@@ -45,7 +45,7 @@
         margin-left: 2vw;
     
     }
-    nav ul li a {
+    .header nav ul li a {
         flex-basis: auto;
         border: none;
         padding: .5rem 1rem;
@@ -176,5 +176,11 @@
         width: 95%;
         padding: 1rem;
     }
-
+    /*discover page */
+    .list h2 {
+        font-size: 1.5rem;
+    }
+    .list p {
+        font-size: 1.2rem;
+    }
 }

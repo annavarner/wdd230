@@ -14,10 +14,7 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
   </head>
-
-
-  
-  
+   
 <body>
 
     <header>
@@ -38,7 +35,7 @@
           <ul id="navigation">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./discover.html">Discover</a></li>
-            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./directory.html" class="active">Directory</a></li>
             <li><a href="./join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -49,45 +46,53 @@
 
 
     </header>
-
+    
     <main>
-        <h2>Thank you for your interest in joining the Massillon Chamber of Commerce!</h2>
-        <h3>Your application has been received. We'll be in touch within 2 business days to discuss the next steps. </h3>
-        <hr>
+      <div class="viewChanger">
+        <!-- <input type="image" src="./images/grid-icon.png" alt="grid view icon">
+        <input type="image" src="./images/list-icon.png" alt="list view icon"> -->
+        <button id="viewGrid"><img src="./images/grid-icon.png"></button>
+        <button id="viewList"><img src="./images/list-icon.png"></button>
+      </div>
+      <hr>
+      <article class="grid">
+        <div class="cards"></div>
+      </article>
     </main>
 
     <footer>
-      <div id="footer-box">
+    <div id="footer-box">
         <div>
-          <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
+        <img class="logo" src="./images/gotigers-small.webp" alt="an animated tiger running with a football wearing a football helmet and jersey">
         </div>
         <div id="address">
             <p><em><strong>Massillon Chamber of Commerce</strong></em></p>
             <p>50 North Ave NE</p>
             <p>Massillon, Ohio 44646</p>
-          </div>
-          <br>
-          <div id="contact">
+        </div>
+        <br>
+        <div id="contact">
             <p>info@massilloncommerce.com</p>
             <p>330-833-3146</p>
             <p><a href="https://www.google.com/maps/place/Massillon,+OH/@40.7742627,-81.5968158,13z/data=!3m1!4b1!4m5!3m4!1s0x8837278b6baf82b1:0x494c254786b9fca6!8m2!3d40.7967244!4d-81.5215093">
             <img src="./images/pin.ico" alt="a location pin icon">Location Map</a></p>
-          </div>
         </div>
-      <hr>
-      <div id="large-footer">
+        </div>
+    <hr>
+    <div id="large-footer">
         <ul>
-          <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
-          <li class="flexitem"> <strong> Anna Varner </strong> </li>
-          <li class="flexitem"> WDD 230 Project </li>
+        <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
+        <li class="flexitem"> <strong> Anna Varner </strong> </li>
+        <li class="flexitem"> WDD 230 Project </li>
         </ul>
-      <p>Last Modification: <span id="lastupdated"></span> </p>
-      </div>
+    <p>Last Modification: <span id="lastupdated"></span> </p>
+    </div>
     </footer>
     <script src="./scripts/today.js"></script>
     <script src="./scripts/togglemenu.js"></script>
     <script src="./scripts/lastmodified.js"></script>
     <script src="./scripts/banner.js"></script>
-    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/directory.js"></script>
+
 </body>
 </html>
