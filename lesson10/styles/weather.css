@@ -1,0 +1,15 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: azure;
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+}
+p, figcaption {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+footer {
+    font-size: 1.5rem;
+}
