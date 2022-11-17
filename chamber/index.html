@@ -55,11 +55,6 @@
 
         <div class="hero-box">
           <picture>
-            <!-- <source media="(max-width: 400px)" srcset="./images/test-img400.jpg">
-            <source media="(max-width: 800px)" srcset="./images/test-img800.jpg">
-            <source media="(max-width: 1600px)" srcset="./images/test-img1200.jpg"> 
-            <img src="./images/test-img1200.jpg" alt="test image"> -->
-
             <source media="(max-width: 400px)" srcset="./images/downtown400.jpg">
             <source media="(max-width: 800px)" srcset="./images/downtown800.jpg">
             <source media="(max-width: 1200px)" srcset="./images/downtown1200.jpg"> 
@@ -67,7 +62,7 @@
             
           </picture>
             <h2>Welcome to Massillon!</h2>
-            <a href="#"><button id="joinBtn">Join the Chamber</button></a>
+            <a href="./join.html"><button id="joinBtn">Join the Chamber</button></a>
 
         </div>
         <div class="event-box">
@@ -77,18 +72,20 @@
           <p><a href="#">more info</a></p>
         </div>
         <div class="weather-box">
-          <h2>Weather</h2>
-          <img class="weather-img" src="./images/partly-cloudy.png" alt="sun behind clouds">
-          <p id="temperature"><span id="degrees">32</span>° F</p>
-          <p>Partly Cloudy</p>
-          <hr>
-          <p>Wind Speed: <span id="wind-speed">4</span> mph</p>
-          <p>Wind Chill: <span id="wind-chill"></span></p>
-          
-          <!--<a class="weatherwidget-io" href="https://forecast7.com/en/40d80n81d52/massillon/?unit=us" data-label_1="Massillon" 
-          data-label_2="WEATHER" data-font="Arial" data-days="3" data-theme="fall-leaves" >Massillon WEATHER</a>
-          <script src="./scripts/weather.js">
-          </script> -->
+          <h2>Current Weather</h2>
+
+          <figure>
+            <img src="" alt="" id="weather-icon">
+            <p><span id="current-temp"></span></p>
+            <hr>
+            <figcaption></figcaption>
+          </figure>
+          <div class="weather-data">
+            <p>Wind Speed: <span id="wind-speed"></span></p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
+          </div>
+
+          <p class="weather-map">Weather Data provided by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
         </div>
         <div class="news-box">
           <h2>News Release</h2>
@@ -121,7 +118,7 @@
           </div>
         </div>  
         <div class="join-box">
-          <a href="#">
+          <a href="./join.html">
             <button class="join-box-button">Join Us!</button>
           </a>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
@@ -153,7 +150,6 @@
           <li class="flexitem">&copy; <span class="currentyear"></span> Massillon Chamber </li>
           <li class="flexitem"> <strong> Anna Varner </strong> </li>
           <li class="flexitem"> WDD 230 Project </li>
-          <li class="flexitem">Weather Data provided by <a href="https://openweathermap.org/">OpenWeatherMap</a></li>
         </ul>
       <p>Last Modification: <span id="lastupdated"></span> </p>
       </div>
@@ -162,6 +158,6 @@
     <script src="./scripts/togglemenu.js"></script>
     <script src="./scripts/lastmodified.js"></script>
     <script src="./scripts/banner.js"></script>
-    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/weather.js"></script>
 </body>
 </html>
