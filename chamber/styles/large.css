@@ -176,11 +176,14 @@
         width: 95%;
         padding: 1rem;
     }
-    /*discover page */
+    /*directory page */
     .list h2 {
         font-size: 1.5rem;
     }
     .list p {
         font-size: 1.2rem;
+    }
+    .viewChanger {
+        margin-left: 45%;
     }
 }

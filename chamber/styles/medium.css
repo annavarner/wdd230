@@ -189,9 +189,12 @@
     form input.submitBtn {
         max-width: 40rem;
     }
-/* discover page */
+/* directory page */
     .list p{
         display: flex;
+    }
+    .viewChanger {
+        margin-left: 40%;
     }
 
 }
