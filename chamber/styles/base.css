@@ -304,6 +304,16 @@ footer hr {
     margin: 1px;
     max-width: 100vw;
 }
+.demographics h3, ul {
+    text-align: left;
+
+}
+.demographics ul img {
+    max-width: 200px;
+}
+.demographics ul li {
+    margin-bottom: 5px;
+}
 
 .flexbox figcaption {
     font-size: 1rem;

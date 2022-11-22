@@ -22,7 +22,7 @@
         "phoneNumber": "330-481-9105",
         "url": "www.lionslincolntheatre.org",
         "image": "./images/lincoln-theatre.jpg",
-        "membershipLevel": "silver"
+        "membershipLevel": "Gold"
     },
     {
         "name": "Macarons & More Bakery",
@@ -38,7 +38,7 @@
         "phoneNumber": "234-555-8520",
         "url": "www.tylersgym.com",
         "image": "./images/gym.jpg",
-        "membershipLevel": "Bronze"
+        "membershipLevel": "Silver"
     },
     {
         "name": "Massillon Library",
@@ -62,7 +62,7 @@
         "phoneNumber": "330-555-4189",
         "url": "www.lilliansvintagemusic.com",
         "image": "./images/records.jpg",
-        "membershipLevel": "Gold"
+        "membershipLevel": "Silver"
     },
     {
         "name": "Speedy Street Classic Cars",
@@ -71,6 +71,14 @@
         "url": "www.speedystreetcars.com",
         "image": "./images/cars.jpg",
         "membershipLevel": "Silver"
+    },
+    {
+        "name": "Shearer's Foods",
+        "address": "100 Lincoln Way East",
+        "phoneNumber": "330-767-3426",
+        "url": "www.shearers.com/",
+        "image": "./images/shearers.webp",
+        "membershipLevel": "Gold"
     }
 ]
 
