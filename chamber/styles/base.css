@@ -438,3 +438,30 @@ form label.top input:required:valid {
     flex-wrap: wrap;
 
 }
+
+.contact-flex {
+    width: 95vw;
+}
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.contact-info h3, .contact-info p {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: .5rem;
+    padding: 0;
+}
+.contact-img {
+    max-width: 95vw;
+}
+.general {
+    font-style: italic;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}

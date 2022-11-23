@@ -196,5 +196,19 @@
     .viewChanger {
         margin-left: 40%;
     }
-
+    .contact-flex {
+        display: flex;
+        gap: 2rem;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        text-justify: left;
+        border: 2px solid #CCC;
+        padding: 1rem;
+        width: 45vw;
+    }
+    .contact-img {
+        max-width: 50vw;
+    }
 }
