@@ -65,7 +65,9 @@
                   <label class="top">Business Name*<input type="text" name="business-name" required></label> 
                   <label class="top">Business Position Title<input type="text" name="title" pattern="[\w\s\-]{7,}"></label>
                   <label class="top">Business Description<input type="text" name="description"></label>
-                  <input type="hidden" name="date" class="join-date">
+                  <label id="hidden">
+                    <input type="hidden" id="join-date" name="date">
+                  </label>
               </fieldset>
               <fieldset>
                 <legend>Membership Level</legend>

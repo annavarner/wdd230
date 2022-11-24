@@ -1,5 +1,4 @@
-const joinDate = document.querySelector(".join-date");
-const joinnow = new Date();
+const joinDate = document.querySelector("#join-date");
 
+joinDate.value = new Date();
 
-joinDate.innerHTML = `${joinnow}`;
