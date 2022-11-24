@@ -51,7 +51,6 @@ h1 {
 
 
 h2 {
-    color: #F5841B;
     text-align: center;
 }
 
@@ -157,6 +156,9 @@ h3, div p {
 .main-grid {
     display: grid;
 
+}
+.hero-box h2 {
+    color: #F5841B;
 }
 .hero-box, .event-box, .weather-box, .news-box {
     border: 1px solid #CCC;
