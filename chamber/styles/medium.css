@@ -21,7 +21,8 @@
 
     }
     #social1 img, #social2 img {
-        width: 40px;
+        width: 30px;
+
     }
 
     .navigation a {
@@ -204,11 +205,10 @@
         display: flex;
         flex-direction: column;
         text-justify: left;
-        border: 2px solid #CCC;
         padding: 1rem;
         width: 45vw;
     }
     .contact-img {
-        max-width: 50vw;
+        max-width: 45vw;
     }
 }

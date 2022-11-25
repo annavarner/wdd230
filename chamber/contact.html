@@ -37,7 +37,7 @@
             <li><a href="./discover.html">Discover</a></li>
             <li><a href="./directory.html">Directory</a></li>
             <li><a href="./join.html">Join</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
         <div class="date"></div>
@@ -49,22 +49,49 @@
 
     <main>
         <div class="contact-flex">
-            <div class="contact-info">
-                <h2>Contact Us</h2>
-                <h3>Massillon Chamber of Commerce </h3>
-                <p>50 North Ave NE</p>
-                <p>Massillon, OH 44646</p>
-                <p>(330)833-3146</p>
-
+          <div class="contact-info">
+          <form method="get">
+            <fieldset>
+              <h2>Contact Us</h2>
+              <!-- <legend>Send us a message</legend> -->
+                <label class="top">First Name<input type="text" name="fname"></label>
+                <label class="top">Last Name<input type="text" name="lname"></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"
+                ></label>
+                <label class="top">Cell Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Comment<input type="textarea" name="comment"></label> 
+            <fieldset>
+              <input type="submit" value="Send Message" class="submitBtn">
+            </fieldset>
             </div> 
-            <div class="contact-img">   
-                <img src="./images/massillon-sign.webp" alt="Welcome to Massillon sign">
-            </div>
+              <img class="contact-img" src="./images/massillon-sign.webp" alt="Welcome to Massillon sign">
+
         </div>
         <hr>
-        <div class="general">
-            <p>For membership information, media queries, or general information, please email
-                info@massilloncommerce.com or call Mary at (330)833-3146</p>
+        
+
+          <h2>Board of Directors</h2>
+          <div class="board-members">
+          <ul>
+            <lh>Michael Scott</lh>
+            <li>michael.scott@massilloncommerce.com</li>
+            <li>330-123-8945</li>
+          </ul>
+          <ul>
+            <lh>Jessica Day</lh>
+            <li>jessica.day@massilloncommerce.com</li>
+            <li>330-234-5689</li>
+          </ul>
+          <ul>
+            <lh>Jason Mendoza</lh>
+            <li>jason.mendoza@massilloncommerce.com</li>
+            <li>330-897-2580</li>
+          </ul>
+          <ul>
+            <lh>Ann Perkins</lh>
+            <li>ann.perkins@massilloncommerce.com</li>
+            <li>330-210-0333</li>
+          </ul> 
         </div>
         <hr>
     </main>
