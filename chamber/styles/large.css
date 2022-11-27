@@ -23,16 +23,13 @@
     }
 
     .header nav {
-        grid-column: 3/6;
+        grid-column: 3/7;
         grid-row: 1;
     }
     .header li {
         font-size: 1.5rem;
     }
-    #social1 {
-        grid-column: 7;
-    }
-    #social2 {
+    #socials {
         grid-column: 8;
     }
 
@@ -54,7 +51,8 @@
 
     .date {
         width: 100%;
-        margin-left: 5%;
+        margin-right: auto;
+        margin-left: auto;
 
     }
 /* Main */
@@ -187,4 +185,23 @@
     .viewChanger {
         margin-left: 45%;
     }
+    .contact-flex {
+        max-width: 95%;
+        display: flex;
+        gap: .5rem;
+
+    }
+    .contact-info {
+        width: 50%; 
+
+    }
+    .contact-img {
+        width: 50%;
+    } 
+    form input.submitBtnContact {
+        width: 88%;
+        margin-left: -.6rem;
+
+
+    }    
 }

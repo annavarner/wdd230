@@ -24,6 +24,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
+    position: relative;
 }
 .header img {
     max-width: 20vw;
@@ -64,19 +65,12 @@ div hr {
     margin: 1em 1em;
     padding: 0;
 }
-
-#social1 img, #social2 img {
+#socials {
+    grid-column: 5/6;
+    display: flex;
+}
+#socials img {
     width: 25px;
-
-}
-#social1 {
-    grid-column: 4;
-    grid-row: 1;
-    margin-top: 10px;
-}
-#social2 {
-    grid-column: 5;
-    grid-row: 1;
     margin-top: 10px;
 }
 
@@ -99,7 +93,11 @@ div hr {
     font-size: 2rem;
     text-decoration: none;
 }
+.navigation {
+    position: absolute;
+    z-index: 2;
 
+}
 .header nav ul, footer ul {
     list-style: none;
     text-align: center;
@@ -450,7 +448,7 @@ form label.top input:required:valid {
     font-size: 2.5rem;
     color: black;
     margin-bottom: 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-info h3, .contact-info p {
@@ -462,7 +460,22 @@ form label.top input:required:valid {
 .contact-img {
     max-width: 600px;
     border-radius: 10px;
-    margin-right: 4rem;
+    border: 1px solid #CCC;
+    box-shadow: 0 6px 6px #777;
+}
+form input.submitBtnContact {
+    border: none;
+    background-color: #F5841B;
+    color: black;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: auto;
+    width: 96%;
+
+}
+.contact-flex fieldset {
+    border: none;
 }
 .board-members {
     display: flex;

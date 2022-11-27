@@ -20,7 +20,7 @@
         grid-row: 2;
 
     }
-    #social1 img, #social2 img {
+    #socials img {
         width: 30px;
 
     }
@@ -179,7 +179,7 @@
     form legend {
         font-size: 1.2rem;
     }
-    form label.top, form label.sbs, form div, .member-levels p, .member-levels ul li, form input.submitBtn{
+    form label.top, form label.sbs, form div, .member-levels p, .member-levels ul li, form input.submitBtn, form input.submitBtnContact{
         font-size: 1.4rem;
     }
 
@@ -191,24 +191,25 @@
         max-width: 40rem;
     }
 /* directory page */
-    .list p{
+    .list p {
         display: flex;
     }
     .viewChanger {
         margin-left: 40%;
     }
     .contact-flex {
-        display: flex;
-        gap: 2rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .contact-info {
-        display: flex;
-        flex-direction: column;
-        text-justify: left;
-        padding: 1rem;
-        width: 45vw;
+        text-align: left;
     }
     .contact-img {
-        max-width: 45vw;
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .board-members {
+        justify-content: center;
     }
 }
