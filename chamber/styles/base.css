@@ -66,7 +66,7 @@ div hr {
     padding: 0;
 }
 #socials {
-    grid-column: 5/6;
+    grid-column: 4/5;
     display: flex;
 }
 #socials img {
@@ -85,7 +85,7 @@ div hr {
     padding-right: 3.5rem;
 }
 .header nav {
-    grid-column: 6;
+    grid-column: 5/6;
     grid-row: 1;
 
 }
