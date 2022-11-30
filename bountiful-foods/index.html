@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Varner WDD-230 Bountiful Foods Website</title>
+    <meta name="description" content="Bountiful Foods website for Anna Varner in WDD 230: Web Frontend Development at BYU-I">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+   
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+  </head>
+
+
+  
+  
+<body>
+
+    <header>
+        <img class="banner" src="./images/banner-large2.webp" alt="an arrangements of various fruits">
+        <h1>Bountiful Foods </h1>
+
+        <nav>
+          <button id="hamburger" class>
+            <span>☰</span>
+          </button>
+          <ul id="navigation">
+            <li><a href="./index.html" class="active">Home</a></li>
+            <li><a href="./fresh.html">Fresh</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+
+        </div>
+        <div class="date"></div>
+
+        <div class="drink">
+            <h2>Make your own specialty drink!</h2>
+            <p>This is sample text</p>
+        </div>
+
+        <div class="weather-data">
+            <h2>Current Weather Conditions in Carlsbad</h2>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <p>Conditions: <span id="conditions"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Three Day Forecast: <span id="forecast"></span></p>
+              </div>
+        </div>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+      <div id="large-footer">
+        <ul>
+          <li class="flexitem">&copy; <span class="currentyear"></span> Bountiful Foods </li>
+          <li class="flexitem"> <strong> Anna Varner </strong> </li>
+          <li class="flexitem"> WDD 230 Final Project </li>
+        </ul>
+      <p>Last Modification: <span id="lastupdated"></span> </p>
+      </div>
+    </footer>
+    <script src="./scripts/today.js"></script>
+    <script src="./scripts/togglemenu.js"></script>
+    <script src="./scripts/lastmodified.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/spotlight.js"></script>
+</body>
+</html>

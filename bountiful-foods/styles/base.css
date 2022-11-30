@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nanum+Gothic&display=swap');
+
+body {
+    background-color: #FFFAD8;
+}
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #40204A;
+}
+.banner {
+    width: 100%;
+}
+p {
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+div {
+    border: 2px solid #69995D;
+}
+
+nav {
+    color: #FF1C42;
+}
