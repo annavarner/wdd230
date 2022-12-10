@@ -19,46 +19,79 @@
 <body>
 
     <header>
-        <img class="banner" src="./images/banner-large2.webp" alt="an arrangements of various fruits">
-        <h1>Bountiful Foods </h1>
-
-        <nav>
-          <button id="hamburger" class>
-            <span>☰</span>
-          </button>
-          <ul id="navigation">
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./fresh.html">Fresh</a></li>
-            <li><a href="./aboutus.html">About Us</a></li>
-          </ul>
-        </nav>
+        <!-- <img class="banner" src="./images/banner-large2.webp" alt="an arrangements of various fruits"> -->
+        <div class="header">
+          <img src="./images/logo.webp" alt="logo showing a bowl of fruit">
+          <h1>Bountiful Foods </h1>
+          <nav>
+            <button id="hamburger" class>
+              <span>☰</span>
+            </button>
+            <ul id="navigation">
+              <li><a href="./index.html" class="active">Home</a></li>
+              <li><a href="./fresh.html">Fresh</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
         <div class="socials">
 
-        </div>
-        <div class="date"></div>
-
-        <div class="drink">
-            <h2>Make your own specialty drink!</h2>
-            <p>This is sample text</p>
-        </div>
-
-        <div class="weather-data">
-            <h2>Current Weather Conditions in Carlsbad</h2>
-                <p>Temperature: <span id="current-temp"></span></p>
-                <p>Conditions: <span id="conditions"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
-                <p>Three Day Forecast: <span id="forecast"></span></p>
-              </div>
         </div>
 
     </header>
 
     <main>
 
+      <div class="date">
+        This is the current date
+      </div>
+      <div class="store">
+        <h2>Visit our market in Carlsbad!</h2>
+        <img src="./images/market.webp" alt="a produce market">
+        <p>Our storefront market has been serving the Carlsbad area since 2015. Come
+          on in for the widest selection of locally-grown organic produce. Our suppliers
+          are carefully selected to meet our high standards for quality and freshness.
+        </p>
+
+      </div>
+      <div class="drink">
+          <h2>Create your own specialty drink!</h2>
+          <img src="./images/smoothies.webp" alt="fresh smoothies on a tray with fruit">
+          <p>This is sample text</p>
+      </div>
+
+      <div class="weather-data">
+          <h2>Current Weather</h2>
+          <span id="current-temp"></span>
+          <figure>
+            <img id="icon">
+          </figure>
+          <figcaption></figcaption>
+
+          <span id="humidity"></span>
+          <hr>
+          <h2>3 Day Forecast</h2>    
+          <span id="forecast">
+          </span>
+          <p><em>Weather Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></em></p>
+      </div>
+      
+      <div class="trucks">
+        <h2>Food Trucks</h2>
+        <img src="./images/foodtruck1.webp" alt="an image of a food truck">
+        <p>With weekly stops in Oceanside, Encinitas, Del Mar, La Jolla, 
+          and Imperial Beach, the best local produce is always nearby! </p>
+      </div>
     </main>
 
     <footer>
-
+      <div class="socials">
+        <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-icon.png" alt="facebook icon"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-icon.png" alt="instagram icon"></a>
+        <a href="https://www.tiktok.com" target="_blank"><img src="./images/tiktok-icon.png" alt="tiktok icon"></a>
+        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter-icon.png" alt="twitter icon"></a>
+      </div>
+      <hr>
       <div id="large-footer">
         <ul>
           <li class="flexitem">&copy; <span class="currentyear"></span> Bountiful Foods </li>
@@ -67,12 +100,11 @@
         </ul>
       <p>Last Modification: <span id="lastupdated"></span> </p>
       </div>
+
     </footer>
-    <script src="./scripts/today.js"></script>
+
     <script src="./scripts/togglemenu.js"></script>
-    <script src="./scripts/lastmodified.js"></script>
-    <script src="./scripts/banner.js"></script>
+
     <script src="./scripts/weather.js"></script>
-    <script src="./scripts/spotlight.js"></script>
 </body>
 </html>

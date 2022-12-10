@@ -1,8 +1,9 @@
 const currentTemp = document.querySelector('#current-temp');
-const conditions = document.querySelector('#conditions');
+const conditions = document.querySelector('figcaption');
 const humidity = document.querySelector('#humidity');
-const forecast = document.querySelector('#forecast');
-const url = 'https://api.openweathermap.org/data/2.5/weather?zip=92008&units=imperial&appid=c3b80b0b52a3df6207da3081ae49e184';
+const icon = document.querySelector('#icon')
+const threeDay = document.querySelector('#forecast');
+const url = 'https://api.openweathermap.org/data/2.5/forecast?zip=92008&units=imperial&cnt=24&appid=c3b80b0b52a3df6207da3081ae49e184';
 
 async function apiFetch() {
     try {
@@ -10,44 +11,58 @@ async function apiFetch() {
       if (response.ok) {
         const data = await response.json();
         displayResults(data);
-      } else {
-          throw Error(await response.text());
+        const forecast = data.list.filter((day) => {
+          return day.dt_txt.endsWith("15:00:00")});
+        forecast.forEach(displayForecast);
+      } 
+      else {
+        throw Error(await response.text());
       }
     } catch (error) {
         console.log(error);
   }
 
 }
-function  displayResults(weatherData) {
-  const temp = weatherData.main.temp.toFixed(0)
-  currentTemp.innerHTML = `<strong>${temp}</strong>&deg;F`;
+function displayResults(weatherData) {
+  const temp = weatherData.list[0].main.temp.toFixed(0);
+  currentTemp.innerHTML = `<strong><em>${temp}&deg;F</em></strong>`;
 
-  const conditions = weatherData.weather[0].description;
+  const description = weatherData.list[0].weather[0].description;
+  conditions.innerHTML = `<strong><em>${description}</em></strong>`;
 
-  conditions.textContent = conditions
-  weatherIcon.setAttribute('alt', desc);
-  captionDesc.textContent = desc;
+  const currentHumidity = weatherData.list[0].main.humidity.toFixed(0);
+  humidity.innerHTML = `<strong><em>${currentHumidity}% humidity</em></strong> `;
 
-  const humidity = weatherData.temp.humidity.toFixed(0)
-  humidity.innerHTML = `${humidity} %`;
-  calc_windChill(temp, speed);
+  const currentIcon = `https://openweathermap.org/img/w/${weatherData.list[0].weather[0].icon}.png`;
+  const desc = weatherData.list[0].weather[0].description;
+  icon.setAttribute('src', currentIcon);
+  icon.setAttribute('alt', desc);
+  icon.setAttribute('loading', 'lazy');
+
 
 }
 
-function calc_windChill(temp, speed){
-  if (temp <= 50  && speed >= 3.0) {
-    const chill = 
-        35.74 + 
-        0.6215 * temp - 
-        35.75 * speed ** 0.16 +
-        0.4275 * temp * speed ** 0.16;
+function displayForecast(day) {
+  list = document.createElement("ul");
+  threeDay.appendChild(list);
 
-    //round result & insert windchill into wind-chill span 
-    document.getElementById("wind-chill").textContent = Math.round(chill);
+  forecastDate = document.createElement ("li");
+  forecastTemp = document.createElement ("li");
+  forecastIcon = document.createElement ("img");
+
+  const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
+  const desc = day.weather[0].description;
+
+  forecastDate.innerHTML = `<strong>${day.dt_txt.substr(5, 5)}</strong>`
+  forecastTemp.innerHTML = `${day.main.temp.toFixed(0)}&deg;F`;
+  forecastIcon.setAttribute('src', iconsrc);
+  forecastIcon.setAttribute('alt', desc);
+  forecastIcon.setAttribute('loading', 'lazy');
+
+  list.appendChild(forecastDate);
+  list.appendChild(forecastTemp);
+  list.appendChild(forecastIcon);
   }
-  else {
-      document.getElementById("wind-chill").textContent = "N/A";
-  }
-}
+
 apiFetch();
   
