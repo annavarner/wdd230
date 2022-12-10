@@ -41,27 +41,10 @@
     </header>
 
     <main>
-
-      <div class="date">
-        This is the current date
-      </div>
-      <div class="store">
-        <h2>Visit our market in Carlsbad!</h2>
-        <img src="./images/market.webp" alt="a produce market">
-        <p>Our storefront market has been serving the Carlsbad area since 2015. Come
-          on in for the widest selection of locally-grown organic produce. Our suppliers
-          are carefully selected to meet our high standards for quality and freshness.
-        </p>
-
-      </div>
-      <div class="drink">
-          <h2>Create your own specialty drink!</h2>
-          <img src="./images/smoothies.webp" alt="fresh smoothies on a tray with fruit">
-          <p>This is sample text</p>
-      </div>
-
-      <div class="weather-data">
-          <h2>Current Weather</h2>
+      <div class="main-grid">
+        <div class="weather-data">
+          <div class="current-weather">
+          <span id="weather-title"><h2>Current Weather</h2></span>
           <span id="current-temp"></span>
           <figure>
             <img id="icon">
@@ -69,42 +52,94 @@
           <figcaption></figcaption>
 
           <span id="humidity"></span>
-          <hr>
-          <h2>3 Day Forecast</h2>    
-          <span id="forecast">
-          </span>
-          <p><em>Weather Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></em></p>
+          </div>
+          <span id="weather-title"><hr><h2>3-day Forecast</h2></span>
+          <div id="forecast">
+
+          </div>
+
       </div>
-      
+      <div class="location-info">
+        <h2>Carlsbad, California</h2>
+        <p>Located about 35 miles north of San Diego, Carlsbad is known for having nearly perfect weather all year round! Looking for 
+          something to do? Carlsbad has beautiful clean uncrowded sandy beaches perfect for swimming, surfing, and sunbathing. The three 
+          lagoons, which span more than 1000 acres are ideal for fishing, bird-watching, hiking, and water recreation. In town, stroll 
+          down the picturesque streets and explore the many antique stores, sidewalk cafes, and boutique shops. And while you're there, 
+          visit us at our storefront market for the best high quality organic produce!
+
+          </p>
+      </div>
+        
+      <div class="store">
+        <h2>Visit our market!</h2>
+        <img src="./images/market.webp" alt="a produce market">
+        <p>Our storefront market at 123 Beach Blvd has been serving the Carlsbad area since 2015. Come
+          on in for the widest selection of locally-grown organic produce and fresh made-to-order specialty drinks. Each of our suppliers
+          are carefully selected to ensure they meet our high standards for quality, freshness, and sustainability. 
+        </p>
+
+      </div>
+
+        
       <div class="trucks">
         <h2>Food Trucks</h2>
         <img src="./images/foodtruck1.webp" alt="an image of a food truck">
-        <p>With weekly stops in Oceanside, Encinitas, Del Mar, La Jolla, 
-          and Imperial Beach, the best local produce is always nearby! </p>
+        <p>With regularly scheduled stops at local farmers markets and other locations in Oceanside, 
+          Encinitas, Del Mar, La Jolla, and Imperial Beach, the best local produce is 
+          always nearby! Follow us on social media for the lastest specials and to find
+          a food truck near you.</p>
       </div>
-    </main>
+      <div class="drink">
+        <a href="./fresh.html">
+          <h2>Create your own specialty drink!</h2>
+          <img src="./images/smoothies.webp" alt="fresh smoothies on a tray with fruit">
+        </a>
+          <p>You have created <span id="num-of-drinks">0</span> specialy drinks!</p>
+      </div>
+      <div class="business-info">
+        <div class="address">
+          <p><strong>Bountiful Foods</strong></p>
+          <p>123 Beach Blvd</p>
+          <p>Carlsbad, California 92008</p>
+          <p>760-555-2022</p>
+        </div>
+        <div class="hours">
+          <p><strong>Storefront Hours</strong></p>
+          <p>Mon-Fri: 10am-8pm</p> 
+          <p>Sat: 8am-6pm</p>
+          <p>Sun: closed</p>
+        </div>
+      </div>  
 
-    <footer>
-      <div class="socials">
-        <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-icon.png" alt="facebook icon"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-icon.png" alt="instagram icon"></a>
-        <a href="https://www.tiktok.com" target="_blank"><img src="./images/tiktok-icon.png" alt="tiktok icon"></a>
-        <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter-icon.png" alt="twitter icon"></a>
-      </div>
-      <hr>
-      <div id="large-footer">
-        <ul>
-          <li class="flexitem">&copy; <span class="currentyear"></span> Bountiful Foods </li>
-          <li class="flexitem"> <strong> Anna Varner </strong> </li>
-          <li class="flexitem"> WDD 230 Final Project </li>
-        </ul>
-      <p>Last Modification: <span id="lastupdated"></span> </p>
-      </div>
+      
+    </div>
+  </main>
 
-    </footer>
+  <footer>
+    <div class="socials">
+      <p><em>For food truck locations and hours, follow us on social media!</em></p>
+      <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-icon.png" alt="facebook icon"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-icon.png" alt="instagram icon"></a>
+      <a href="https://www.tiktok.com" target="_blank"><img src="./images/tiktok-icon.png" alt="tiktok icon"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter-icon.png" alt="twitter icon"></a>
+    </div>
+    <hr>
+
+
+    <p><em>Weather Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></em></p>
+    <p>Last Modification: <span id="lastupdated"></span> </p>
+    </div>
+    <div id="large-footer">
+      <ul>
+        <li class="flexitem">&copy; <span class="currentyear"></span> Bountiful Foods </li>
+        <li class="flexitem"> <strong> Anna Varner </strong> </li>
+        <li class="flexitem"> WDD 230 Final Project </li>
+      </ul>
+
+  </footer>
 
     <script src="./scripts/togglemenu.js"></script>
-
+    <script src="./scripts/lastmodified.js"></script>
     <script src="./scripts/weather.js"></script>
 </body>
 </html>
