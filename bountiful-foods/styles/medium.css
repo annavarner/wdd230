@@ -49,8 +49,9 @@
     .store {
         grid-row: 3;
         grid-column: 1/4;
+    
     }
-    .store p, .trucks p {
+    .store p, .trucks p, .location-info p {
         text-align: left;
     }
     .store img{

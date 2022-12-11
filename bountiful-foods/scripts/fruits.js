@@ -1,7 +1,7 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/fruit.json';
-const fruit1 = document.querySelector('fruit1');
-const fruit2 = document.querySelector('fruit2');
-const fruit3 = document.querySelector('fruit3');
+const fruit1 = document.getElementById('fruit1');
+const fruit2 = document.getElementById('fruit2');
+const fruit3 = document.getElementById('fruit3');
 
 
 
@@ -10,8 +10,10 @@ async function apiFetch() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      const fruits = data['name']
-      fruits.foreach(displayFruit);
+      console.log(data)
+      data.forEach(displayFruit1);
+      data.forEach(displayFruit2);
+      data.forEach(displayFruit3);
     } 
     else {
       throw Error(await response.text());
@@ -20,23 +22,34 @@ async function apiFetch() {
     console.log(error);
   }
 }
-    
-
   
-    // const fruits = jsonObject['fruit'];
-    // console.log(fruits)
-    // fruits.forEach(displayFruit);
+
+  function displayFruit1(data) {
+    let option = document.createElement('option');
+    console.log(option)
+    option.textContent = data.name;
+    fruit1.add(option);
 
 
+  }
 
+  function displayFruit2(data) {
+    let option = document.createElement('option');
+    console.log(option)
+    option.textContent = data.name;
+    fruit2.add(option);
 
-
-  function displayFruit(data) {
-    let option = document.createElement('object');
-    option.textContent=data[i].name;
-
-    fruit1.appendChild(option);
   
 
   }
+
+  function displayFruit3(data) {
+    let option = document.createElement('option');
+    console.log(option)
+    option.textContent = data.name;
+    fruit3.add(option);
+
+
+  }
+
   apiFetch();
