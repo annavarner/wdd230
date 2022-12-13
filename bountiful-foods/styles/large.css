@@ -29,7 +29,7 @@
 
     }
 
-    .header nav #hamburger {
+    .header nav .hamburger {
         display: none;
     }
     .main-grid {
@@ -75,4 +75,9 @@
         grid-column: 1/4;
         grid-row: 5; 
     }
+    #sbs {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
 }

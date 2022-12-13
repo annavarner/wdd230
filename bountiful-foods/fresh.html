@@ -22,9 +22,14 @@
           <img src="./images/logo.webp" alt="logo showing a bowl of fruit">
           <h1>Bountiful Foods </h1>
           <nav>
-            <button id="hamburger" class>
-              <span>☰</span>
-            </button>
+            <div class="hamburger">
+              <div class="menu_icon">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                </label>
+              </div>
+            </div>
             <ul id="navigation">
               <li><a href="./index.html" class="active">Home</a></li>
               <li><a href="./fresh.html">Fresh</a></li>
@@ -37,13 +42,15 @@
 
 <main>  
   <img class="banner" src="./images/banner-large2.webp" alt="an arrangements of various fruits">
-    <form method="get" action="javascript:void(0);" id="drinkForm">
+  <div id="sbs"> 
+    <div id="form">
+      <form method="get" action="" id="drinkForm">
         <fieldset>
           <h2>Create a Specialty Drink!</h2>
             <label class="top">First Name<input type="text" name="fname" id="firstname" required></label>
             <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" id="email" required></label>
             <label class="top">Cell Phone<input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
-            <p>Select 3 ingredients to create your Specialty Drink:</p>
+          <h3>Select 3 ingredients to create your Specialty Drink:</h3>
             <label for="fruit1" class="top">Fruit # 1</label>
                 <select name="fruits" id="fruit1">
                   <option value="" selected disabled>Select One</option>
@@ -57,12 +64,13 @@
                 <option value="" selected disabled>Select One</option>
             </select>
 
-            <textarea name="instructions" rows="10" cols="45" id="instructions">Special Instructions</textarea>
-          <input type="button" value="Create My Drink!" id="submitBtn">
+            <textarea name="instructions" rows="10" cols="45" id="instructions" placeholder="Special Instructions"></textarea>
+            <input type="button" value="Create My Drink!" id="submitBtn">
         </fieldset>
       </form>
-          
+    </div>  
         <div id="output-card"></div>
+      </div> 
       </main>
 
   
