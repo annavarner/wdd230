@@ -29,14 +29,20 @@
         grid-column: 1/2;
         flex-direction: column;
         border: 1px solid #69995D;
-
+        justify-content: space-evenly;
     }
-    main img {
+    .weather-data hr {
+        display: revert;
+
+    
+    }
+    .main-grid img {
         border-radius: 7px;
         margin: 5px;
     }
-    #weather-title {
-        display: contents;
+    .weather-title {
+        display: block;
+
     }
     .drink {
         grid-column: 2/4;
@@ -82,5 +88,14 @@
         justify-content: space-around;
     }
     
-
+    .img1 {
+        float: right;
+        max-width: 450px;
+        margin: 1rem;
+    }
+    .img2 {
+        float: left;
+        max-width: 450px;
+        margin: 1rem;
+    }
 }

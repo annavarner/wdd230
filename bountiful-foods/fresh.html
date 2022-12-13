@@ -37,35 +37,59 @@
 
 <main>  
   <img class="banner" src="./images/banner-large2.webp" alt="an arrangements of various fruits">
-    <form method="get">
+    <form method="get" action="javascript:void(0);" id="drinkForm">
         <fieldset>
           <h2>Create a Specialty Drink!</h2>
-            <label class="top">First Name<input type="text" name="fname" required></label>
-            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            <label class="top">Cell Phone<input type="tel" name="phone" placeholder="1235551234" required></label>
+            <label class="top">First Name<input type="text" name="fname" id="firstname" required></label>
+            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" id="email" required></label>
+            <label class="top">Cell Phone<input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
             <p>Select 3 ingredients to create your Specialty Drink:</p>
             <label for="fruit1" class="top">Fruit # 1</label>
-                <select name="fruits" id="fruit1" required>
-                  <option selected disabled>Select One</option>
+                <select name="fruits" id="fruit1">
+                  <option value="" selected disabled>Select One</option>
                 </select>
             <label for="fruit2" class="top">Fruit # 2</label>
               <select name="fruits" id="fruit2" required>
-                <option selected disabled>Select One</option>
+                <option value="" selected disabled>Select One</option>
             </select>
             <label for="fruit3" class="top">Fruit # 3</label>
               <select name="fruits" id="fruit3" required>
-                <option selected disabled>Select One</option>
+                <option value="" selected disabled>Select One</option>
             </select>
 
-            <textarea name="instructions" rows="10" cols="45">Special Instructions</textarea>
-            <fieldset>
-          <input type="submit" value="Create My Drink!" class="submitBtn">
+            <textarea name="instructions" rows="10" cols="45" id="instructions">Special Instructions</textarea>
+          <input type="button" value="Create My Drink!" id="submitBtn">
         </fieldset>
-        </div> 
+      </form>
           
+        <div id="output-card"></div>
       </main>
-<footer>
-  <script src="./scripts/fruits.js"></script>
-</footer>
+
+  
+  <footer>
+    <div class="socials">
+      <p><em>For food truck locations and hours, follow us on social media!</em></p>
+      <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-icon.png" alt="facebook icon"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-icon.png" alt="instagram icon"></a>
+      <a href="https://www.tiktok.com" target="_blank"><img src="./images/tiktok-icon.png" alt="tiktok icon"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="./images/twitter-icon.png" alt="twitter icon"></a>
+    </div>
+    <hr>
+
+
+    <p><em>Weather Data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></em></p>
+    <p>Last Modification: <span id="lastupdated"></span> </p>
+    <div id="large-footer">
+      <ul>
+        <li class="flexitem">&copy; <span class="currentyear"></span> Bountiful Foods </li>
+        <li class="flexitem"> <strong> Anna Varner </strong> </li>
+        <li class="flexitem"> WDD 230 Final Project </li>
+      </ul>
+    </div>
+  </footer>
+
+    <script src="./scripts/togglemenu.js"></script>
+    <script src="./scripts/lastmodified.js"></script>
+    <script src="./scripts/fruits.js"></script>
 </body>
-</main>
+</html>

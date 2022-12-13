@@ -33,6 +33,25 @@ p {
 }
 
 
+.header nav ul li {
+    border: 1px gray;
+}
+.header nav ul li a {
+    display: flex;
+    padding-right: 0.5rem;
+    text-decoration: none;
+}
+.header nav a:hover {
+    background-color: #FF1C42;
+    color: white;
+    box-shadow: 10px 5px 5px black;
+}
+
+
+.active {
+    font-weight: bold;
+}
+
 #hamburger {
     font-size: 2.2rem;
     text-decoration: none;
@@ -47,7 +66,7 @@ p {
     list-style-type: none;
 }
 
-main img {
+.main-grid img {
     max-width: 100%;
 }
 
@@ -60,6 +79,9 @@ main img {
     display: flex;
     flex-direction: row;
 }
+.weather-data hr {
+    display: none;
+}
 .current-weather {
     display: flex;
     flex-direction: column;
@@ -71,7 +93,7 @@ main img {
     width: 65px;
 
 }
-#weather-title {
+.weather-title {
     display: none;
 }
 figure {
@@ -129,7 +151,7 @@ form legend {
 form label.top, form div {
     display: block;
     padding-top: 1rem;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 form label.top input,  form label.top select {
@@ -144,12 +166,16 @@ form textarea {
     margin-top: 1rem;
     width: 96%;
 }
-
-form input.submitBtn {
+form select {
+    padding: .75rem;
+    width: 92%;
+}
+form #submitBtn {
     border: none;
-    background-color: #69995D;
-    color: black;
+    background-color: #FF1C42;
+    color: white;
     font-weight: bold;
+    font-size: 1.5rem;
     border-radius: 2rem;
     padding: .75rem 1.5rem;
     margin: auto;
@@ -162,4 +188,17 @@ form label.top input:required {
 }
 form label.top input:required:valid {
     border: 2px solid #69995D;
+}
+#output-card{
+    border: 2px solid #69995D; 
+    text-align: center;
+
+}
+.about-us p {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.img1, .img2 {
+    width: 100%
 }
