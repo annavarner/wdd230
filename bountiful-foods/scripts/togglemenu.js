@@ -13,4 +13,3 @@ menu.addEventListener("click", () => {
 const x = document.querySelector(".hamburger")
 x.onclick = toggleMenu;
 
-// change view on directory page to grid or list

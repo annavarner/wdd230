@@ -1,11 +1,7 @@
-//Insert current year after copyright sign in footer
-
 let date = new Date();
 let year = date.getFullYear();
 document.querySelector(".currentyear").textContent = year;
 
-
-//Insert last modified date in footer
 
 const lastMod = new Date(document.lastModified);
 
@@ -20,9 +16,4 @@ const formatted = lastMod.toLocaleDateString("en-US", {
 
 document.getElementById("lastupdated").innerHTML = formatted;
 
-//display number of days since last visit
-
-// const visits = document.querySelector("visit");
-// let lastVisit = Number(window.localStorage.getItem("visit-date"));
-// let today = Date.now()
 
