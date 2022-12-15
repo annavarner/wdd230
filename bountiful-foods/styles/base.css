@@ -41,6 +41,7 @@ h2, p {
     padding-right: 0.5rem;
     text-decoration: none;
     font-size: 1.5rem;
+    padding: .5rem;
 }
 .header nav a:hover {
     background-color: #FF1C42;
@@ -235,8 +236,16 @@ form label.top input:required:valid {
 }
 #output-card{
     border: 2px solid #69995D; 
-    text-align: center;
-
+    text-align: left;
+}
+#output-card ul {
+    font-size: 1.2rem;
+}
+#output-card ul li {
+    list-style-type: none;
+}
+#output-card p {
+    text-align: left;
 }
 .about-us p {
     text-align: left;
